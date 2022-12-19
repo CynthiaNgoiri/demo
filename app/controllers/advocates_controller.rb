@@ -28,7 +28,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :render_record_not_found
     private
 
     def advocate_params
-        params.permit(:name, :phone, :field_id, :years_of_practice, :pin_number, :email, :password, :password_confirmation)
+        params.permit(:name, :phone,  :years_of_practice, :pin_number, :email, :password, :password_confirmation)
         
     end
 

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get "/dispute_categories", to: "dispute_categories#index"
   resources :dispute_categories, only: [:create]
   resources :dispute_types, only:[:index, :create]
-  resources :fields, only:[:index, :create]
+  
   
   # post "/advocates/signup", to: "advocates#create"
   resources :advocates, only:[:index, :show, :create]

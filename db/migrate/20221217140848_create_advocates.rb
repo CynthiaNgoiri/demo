@@ -4,7 +4,7 @@ class CreateAdvocates < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :phone
       t.string :email
-      t.integer :field_id
+      t.integer :dispute_category_id
       t.integer :years_of_practice
       t.integer :pin_number
       t.string :password_digest
